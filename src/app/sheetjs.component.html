@@ -1,0 +1,11 @@
+<input type="file" (change)="onFileChange($event)" multiple="false" />
+<div class="py3 overflow-scroll">
+  <table class="table table-light border">
+    <tr *ngFor="let row of data">
+      <td *ngFor="let val of row">
+        {{val}}
+      </td>
+    </tr>
+  </table>
+</div>
+<button class="btn btn-primary" (click)="export()">Export</button>
