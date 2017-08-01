@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppComponent } from './app.component'
 import { SheetJSComponent } from './sheetjs.component'
 
+import { LoadFileService } from './load-file.service'
+
 @NgModule({
   imports: [BrowserModule],
   declarations: [AppComponent, SheetJSComponent],
-  providers: [],
+  providers: [LoadFileService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
